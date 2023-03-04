@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Short Stack';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/shortstack/v15/bMrzmS2X6p0jZC6EcmPFX9SVe34.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
     font-family: 'Lobster';
     font-style: normal;
     font-weight: 400;
@@ -8,7 +17,9 @@
   }
 
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
@@ -38,38 +49,47 @@ h1 {
 
 h2 {
     font-family: "Lobster", Georgia, serif;
-    padding: 0 0 0 15px;
+    padding: 0 0 5px 15px;
     text-align: left;
+    color: #9e7846c7;
 }
 
-.bDayMessage p {
+.bDayMessage {
+    font-family: "Short Stack";
     font-size: 20px;
-    color: #96880dc7;
-    line-height: 1.5;
+    font-weight: 600;
+    color: #9e7846c7;
+    line-height: 1.8;
 }
 
 a {
     text-decoration: underline;
-    color:seagreen;
+    color: rgb(221, 113, 131);
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Helvetica, 'Arial Narrow Bold', sans-serif;
+}
+
+strong {
+    position: relative;
+    left: 100px;
+    right: 10px;
+    font-size: 50px;
 }
 
 .tooltip {
-    text-decoration:none;
-    position:relative;
+    position: relative;
 }
 
 .tooltip span {
-    display:none;
-    border-radius:6px;
-    color:black;
-    background:white; 
+    display: none;
+    border-radius: 6px;
+    color: black;
+    background: white; 
 }
 
 .tooltip span img {
-    float:left;
-    margin:0px 8px 8px 0;
+    float: left;
+    margin: 0px 8px 8px 0;
 }
 
 .tooltip:hover span {
@@ -88,25 +108,28 @@ a {
 }
 
 .container {
+    width: 824px;
+    max-height: 800px; 
     background-color: whitesmoke;
-    margin: 50px 200px;
+    margin: 50px auto;
     border: 1px solid rgba(145, 145, 145, 0.308);
     border-radius: 10px;
 }
 
 .wowCaption {
+    width: 295px;
+    background-color: rgb(233, 145, 218);
     color: rgb(233, 76, 207);
     font-weight: 800;
-    position: absolute;
     text-align: center;
-    top: 59%;
-    left: 40%;
-    right: 40%;
+    margin: 10px auto;
+    border: 2px solid rgb(194, 38, 147)
 }
 
 .wowCaption:hover {
     text-transform: uppercase;
     font-size: larger;
+    background-color: bisque;
 }
 
 .bDayMessage {
@@ -118,27 +141,33 @@ a {
 }
 
 #hearts {
-    font-size: larger;
+    font-size: 30px;
     display: block;
     text-align: center;
     margin: 30px 0 0 0;
 }
 
 #from {
+    font-family: "Short Stack";
+    font-weight: 600;
     display: block;
     text-align: right;
 }
 
 footer {
-    background-color: rgba(127, 255, 212, 0.171);
+    position: absolute;
+    left: 0;
+    background-color: rgb(200, 247, 231);
+    padding: 1px;
+    border: 1px solid teal;
 }
 
 footer p {
     text-align: left;
     font-size: smaller;
-    color: rgba(43, 129, 122, 0.904)
+    color: rgb(79, 155, 148)
 }
 
-.moje {
-    text-decoration: none;
+#magic {
+    color: rgb(18, 128, 136);
 }
