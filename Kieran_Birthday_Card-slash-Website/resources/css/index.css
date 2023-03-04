@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url(./images/transPride.png);
+    background-size: cover;
+    /* background-color: rgba(181, 255, 230, 0.205); */
+    text-align: center;
+    /* position: relative; */
+    left: 100px;
+}
+header {
+    background-image: linear-gradient(rgba(101, 255, 242, 0.521), rgba(195, 0, 255, 0.33)),
+                                      url(./images/kierGlasses.jpg);
+    background-size: 300px;
+    width: 285px;
+    height: 433px;
+    margin: 15px auto;
+    padding: 5px;
+    border: 5px solid rgba(101, 255, 242, 0.521);
+}
+
+h1 {
+    color: rgb(74, 199, 188);
+}
+
+h2 {
+    font-family: "Lobster", Georgia, serif;
+    padding: 0 0 0 15px;
+    text-align: left;
+}
+
+.bDayMessage p {
+    font-size: 20px;
+    color: #96880dc7;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: underline;
+    color:seagreen;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+
+.tooltip span {
+    display:none;
+    border-radius:6px;
+    color:black;
+    background:white; 
+}
+
+.tooltip span img {
+    float:left;
+    margin:0px 8px 8px 0;
+}
+
+.tooltip:hover span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    z-index: 1000;
+    width: auto;
+    max-width: 742px;
+    border: 0 solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.container {
+    background-color: whitesmoke;
+    margin: 50px 200px;
+    border: 1px solid rgba(145, 145, 145, 0.308);
+    border-radius: 10px;
+}
+
+.wowCaption {
+    color: rgb(233, 76, 207);
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    top: 59%;
+    left: 40%;
+    right: 40%;
+}
+
+.wowCaption:hover {
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.bDayMessage {
+    position: relative;
+    text-align: left;
+    padding: 2%;
+    margin: auto 10px;
+    border: 5px double rgba(255, 0, 0, 0.4);
+}
+
+#hearts {
+    font-size: larger;
+    display: block;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#from {
+    display: block;
+    text-align: right;
+}
+
+footer {
+    background-color: rgba(127, 255, 212, 0.171);
+}
+
+footer p {
+    text-align: left;
+    font-size: smaller;
+    color: rgba(43, 129, 122, 0.904)
+}
+
+.moje {
+    text-decoration: none;
+}
